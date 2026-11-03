@@ -16,8 +16,12 @@ reports/figures/     figures générées par les notebooks
 
 ## Données
 
-Télécharger sur RTE éCO2mix les fichiers « Données annuelles définitives » France 2019–2025
-(`eCO2mix_RTE_Annuel-Definitif_<année>.xls`) et les placer dans `data/raw/`.
+`data/raw/` contient les fichiers « Données annuelles définitives » France 2019–2025 de
+[RTE éCO2mix](https://www.rte-france.com/eco2mix) (`eCO2mix_RTE_Annuel-Definitif_<année>.xls`),
+tels que téléchargés : texte tabulé encodé en latin-1 malgré l'extension `.xls`.
+Source des données : RTE éCO2mix.
+
+**2025 = jeu de test verrouillé jusqu'au 4 janv. 2027** : ne l'utiliser que pour des contrôles de structure.
 
 ## Règles du projet
 
