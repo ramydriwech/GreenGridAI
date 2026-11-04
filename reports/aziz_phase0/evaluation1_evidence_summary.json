@@ -1,0 +1,49 @@
+{
+  "report": "GreenGrid AI Aziz Phase 0 (2024 data; no 2025 access)",
+  "generated_utc": "2026-11-01T14:22:27.102453+00:00",
+  "methodology": "Descriptive EDA only; no causal inference or trained day-ahead predictor",
+  "joined_hours": 8784,
+  "temp_consumption_r": -0.575,
+  "wind_proxy_co2_r": -0.007,
+  "forecast_pilot": [
+    {
+      "variable": "Temperature at 2 m",
+      "hours": 168,
+      "mae": 0.95,
+      "rmse": 1.193,
+      "units": "°C"
+    },
+    {
+      "variable": "Wind speed at 100 m",
+      "hours": 168,
+      "mae": 4.138,
+      "rmse": 5.197,
+      "units": "km/h"
+    }
+  ],
+  "rte_quality": {
+    "Export rows": 35136,
+    "Unique UTC timestamps": 35132,
+    "Duplicate UTC timestamps (extra rows)": 4,
+    "Expected UTC 15-minute slots": 35136,
+    "Missing UTC 15-minute slots": 4,
+    "Unexpected UTC timestamps off expected grid": 0,
+    "Null consumption export rows": 17568,
+    "Null CO2 export rows": 17568,
+    "Hours missing from resampled index": 0,
+    "Hours with no valid consumption": 1,
+    "Hours with no valid CO2 intensity": 1
+  },
+  "wind_diagnostics": [
+    {
+      "relationship": "mean_city_wind_100m_kmh vs eolien",
+      "n": 8783,
+      "r": 0.861
+    },
+    {
+      "relationship": "eolien vs co2_production_g_per_kWh",
+      "n": 8783,
+      "r": 0.022
+    }
+  ]
+}
